@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;    
+    list-style: none;
+    outline: none;
+    border: none;
+    transition: .3s ease;
+}
+
+:root{
+    --color-white: #FFF;
+    --color-black: #000;
+    --color-gold: #D9AE74;
+    --color-grey: #F2F2F4;
+    --color-blue: #28638F; 
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-thumb{
+    width: 2rem;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--color-gold);
+}
+
+
+
+
+header{
+    background-color: var(--color-white);
+    height: 60px;
+    position: fixed;    
+    z-index: 1000;
+    
+}
+
+body{
+    background-color: #F2F2F4;
+}
+.logo img{
+    width: 65px;
+    color: antiquewhite;
+    background-color: white;
+}
+
+li{
+     font-size: 1.5rem;
+     cursor: pointer;    
+}
+li:hover{
+    color: var(--color-gold);
+}
+
+#menu-btn{
+    display: none;
+    font-size: 1.8rem;
+    z-index: 999;
+    cursor: pointer;
+}
+
+
+.home{
+    background: url(./img/hammer.jpg);
+    background-size: cover;   
+    min-height: 80vh;
+    position: relative;
+    
+    
+}
+
+.home .content{
+    z-index: 100;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+}
+.home .content h1{
+    font-size: 5rem;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 2rem;
+}
+
+span{
+    color: var(--color-blue);
+    font-size: 1.5rem;
+     font-weight: bold;
+}
+
+.home .content a{
+    font-size: 1.5rem;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------- MEDIA-QUERYS ------------- */
+
+@media (max-width:768px){
+    html{
+        font-size: 60%;
+    }
+}
+
+@media (max-width:568px){
+    html{
+        font-size: 60%;
+    }
+}
+
+@media(max-width:640px){
+    .nav{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: var(--color-white);
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    .nav.active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        padding: 1rem 1.5rem ;
+        
+    }
+
+    .nav-list li{
+        margin: 1rem 0;
+
+    }
+    #menu-btn{
+        display: inline-block;
+        color: #000;
+        
+    }
+}
