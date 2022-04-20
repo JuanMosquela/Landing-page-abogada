@@ -42,6 +42,8 @@ header{
     height: 60px;
     position: fixed;    
     z-index: 1000;
+    background-color: transparent;
+    
     
 }
 
@@ -51,7 +53,7 @@ body{
 .logo img{
     width: 65px;
     color: antiquewhite;
-    background-color: white;
+    
 }
 
 li{
@@ -103,9 +105,10 @@ span{
     font-size: 1.5rem;
     color: var(--color-white);
     background-color: var(--color-blue);
-    border-radius: 1rem;
+    border-radius: .5rem;
     padding: 1rem 2rem;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 
