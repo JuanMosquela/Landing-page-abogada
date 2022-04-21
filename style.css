@@ -49,9 +49,13 @@ header{
     height: 60px;
     position: fixed;    
     z-index: 1000;
-    background-color: transparent;
     
     
+    
+}
+
+section{
+    padding: 0 8%;
 }
 
 body{
@@ -128,6 +132,11 @@ span{
     box-shadow: 1px 5px 10px rgba(0, 0, 0, .8);
 }
 
+.about{
+    margin-bottom: 3rem;
+    background-color: var(--color-white);
+}
+
 .about-content{
     padding: 0 3rem;
     text-align: justify;
@@ -145,6 +154,31 @@ span{
 .about-content button{
     background-color: #28638F;
 
+}
+
+.services{
+    background-color: var(--color-grey);   
+    min-height: 30vh;
+   
+} 
+
+
+
+.icons-container .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    width: 200px;
+    height: 100px;
+    color: var(--color-gold);
+    border: var(--color-gold) 2px solid;
+    font-size: 2.5rem;
+}
+
+.icons-container .icon:hover{
+    background-color: var(--color-gold);
+    color: var(--color-white);
 }
 
 
@@ -217,12 +251,14 @@ span{
 @media(max-width:568px){
     .nav{
         position: absolute;
-        top: 80px;
+        top: 60px;
         left: 0;
         right: 0;
         background-color: var(--color-white);
         transform: translateX(100%);
         opacity: 0;
+        box-shadow: 3px 14px 15px -10px rgba(0,0,0,0.4);
+        
     }
 
     .nav.active{
@@ -246,5 +282,18 @@ span{
         
     }
 
+    .services{
+        flex-direction: column;
+        padding: 0 8%;
+        
+    }
+
+    .icons-container .icon{
+        width: 100%;
+        margin: 1rem 0;
+    }
+
     
 }
+
+
