@@ -16,16 +16,16 @@
     --color-white: #FFF;
     --color-black: #000;
     --color-gold: #D9AE74;
-    --color-grey: #F2F2F4;
+    --color-grey: rgb(247, 241, 241);
     --color-blue: #28638F; 
     --color-blue-hover: #3877a7; 
-    --paragraf: 
+    --color-border: #ccc;
 }
 
 html{
     scroll-behavior: smooth;
     font-size: 62.5%;
-    overflow-x: hidden;
+    
 }
 ::-webkit-scrollbar{
     width: 1rem;  
@@ -42,25 +42,19 @@ html{
 }
 
 
-
-
 header{
     background-color: var(--color-white);
     height: 60px;
     position: fixed;    
-    z-index: 1000;
-    
-    
-    
+    z-index: 1000;   
 }
 
 section{
     padding: 0 8%;
+    overflow-x: hidden;
 }
 
-body{
-    background-color: #F2F2F4;
-}
+
 .logo img{
     width: 65px;
     color: antiquewhite;
@@ -77,6 +71,7 @@ li:hover{
 
 #menu-btn{
     display: none;
+    margin-right: 2rem;
     font-size: 1.8rem;
     z-index: 999;
     cursor: pointer;
@@ -147,39 +142,54 @@ span{
     margin-bottom: 2rem;
     font-family: 'PT Serif', serif;
 }
+
 .about-content p{
      font-size: 1.5rem;
      margin-bottom: 2rem;
 }
+
 .about-content button{
-    background-color: #28638F;
+    background-color: #28638F;        
+}
+    
+.services{
+    background-color: var(--color-grey);
+    padding: 3rem 8%;
+}
+    
+.services h2{
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+    font-family: 'PT Serif', serif;
+}
+.services-content{    
+    padding: 1rem ;
+    text-align: justify;
+}
+
+.services-content .container-info{
+    background-color: var(--color-white);       
+    padding: 1rem 2rem;
+    border: var(--color-border) thin solid;    
+}
+
+.services p{
+    font-size: 1.5rem;  
 
 }
 
-.services{
-    background-color: var(--color-grey);   
-    min-height: 30vh;
-   
-} 
-
-
-
-.icons-container .icon{
+.icon-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-white);
-    width: 200px;
-    height: 100px;
-    color: var(--color-gold);
-    border: var(--color-gold) 2px solid;
-    font-size: 2.5rem;
+    color: var(--color-white);
+    background-color: var(--color-blue);
 }
 
-.icons-container .icon:hover{
-    background-color: var(--color-gold);
-    color: var(--color-white);
+.icon-container i{
+    font-size: 3rem;
 }
+
 
 
 
@@ -242,13 +252,15 @@ span{
     
 }
 
-@media (max-width:568px){
+
+
+@media(max-width:568px){
     html{
         font-size: 60%;
     }
-}
 
-@media(max-width:568px){
+    section{}
+}
     .nav{
         position: absolute;
         top: 60px;
@@ -282,16 +294,9 @@ span{
         
     }
 
-    .services{
-        flex-direction: column;
-        padding: 0 8%;
-        
-    }
+    
 
-    .icons-container .icon{
-        width: 100%;
-        margin: 1rem 0;
-    }
+    
 
     
 }
