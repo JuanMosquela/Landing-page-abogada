@@ -66,7 +66,7 @@ header{
 }
 
 
-
+}
 
 section{
     padding: 0 8%;
@@ -97,7 +97,7 @@ li:hover{
 
 
 .home{
-    background:linear-gradient(#fff7ef38, #fff7ef56), url(./img/business-woman-working-in-office-on-computer.jpg);
+    background:linear-gradient(#fff7ef38, #fff7ef56), url(./img/hammer.jpg);
     background-size: cover;   
     min-height: 80vh;
     position: relative;
@@ -283,24 +283,42 @@ span{
     
 }
 
+
+
+
 footer{
-    background-color: #212529;
+    background-color: var(--color-black);
 }
 
 
+footer i{
+    padding: 1rem;
+    font-size: 2.4rem;
+}
 
-.links-container h3,li{
+footer h3{
     color: var(--color-white);
 }
 
-.links-container h3{
-    padding: 0 2rem;
+.links-container i{
+    color: var(--color-white);
 }
 
-footer p{
+.links-container{
+    text-align: center;
+}
+
+.links-container li{
+    
     color: var(--color-white);
+}
+
+footer .copyright{
     font-size: 1.5rem;
+    color: var(--color-white);
 }
+
+
 
 
 
@@ -357,11 +375,7 @@ footer p{
     
 }
 
-@media (max-width:568px){
-    html{
-        font-size: 60%;
-    }
-}
+
 
 @media(max-width:568px){
     .nav{
