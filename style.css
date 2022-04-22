@@ -14,17 +14,19 @@
 
 :root{
     --color-white: #FFF;
-    --color-black: #000;
+    --color-black: #212529;
     --color-gold: #D9AE74;
-    --color-grey: rgb(247, 241, 241);
+    --color-grey: #F3F4F5;
     --color-blue: #28638F; 
     --color-blue-hover: #3877a7; 
+    --color-ocre: #FFF7EF;
     --color-border: #ccc;
 }
 
 html{
     scroll-behavior: smooth;
     font-size: 62.5%;
+    overflow-x: hidden;
     
 }
 ::-webkit-scrollbar{
@@ -42,6 +44,15 @@ html{
 }
 
 
+h2{
+    font-size: 3.8rem;
+}
+
+svg{
+    background-color: var(--color-blue);
+    
+}
+
 
 
 header{
@@ -53,6 +64,9 @@ header{
     
     
 }
+
+
+
 
 section{
     padding: 0 8%;
@@ -83,7 +97,7 @@ li:hover{
 
 
 .home{
-    background: url(./img/hammer.jpg);
+    background:linear-gradient(#fff7ef38, #fff7ef56), url(./img/business-woman-working-in-office-on-computer.jpg);
     background-size: cover;   
     min-height: 80vh;
     position: relative;
@@ -101,7 +115,7 @@ li:hover{
     font-size: 5rem;
     font-family: 'PT Serif', serif;
     font-weight: 700;
-    color: var(--color-black);
+    color: var(--color-white);
     margin-bottom: 2rem;
 }
 
@@ -132,7 +146,7 @@ span{
 }
 
 .about{
-    margin-bottom: 3rem;
+    
     background-color: var(--color-white);
 }
 
@@ -142,29 +156,35 @@ span{
 }
 
 .about-content h2{
-    font-size: 3.2rem;
+    
     margin-bottom: 2rem;
     font-family: 'PT Serif', serif;
 }
 
 .about-content p{
-     font-size: 1.5rem;
+     font-size: 1.8rem;
      margin-bottom: 2rem;
 }
 
 .about-content button{
-    background-color: #28638F;        
+    background-color: var(--color-blue);        
 }
     
 .services{
-    background-color: var(--color-grey);
-    padding: 3rem 0;
+    background-color: var(--color-blue);
+    
 }
     
 .services h2{
-    font-size: 3.2rem;
-    margin-bottom: 2rem;
+    color: #FFF;    
+    padding-bottom: 4rem;
     font-family: 'PT Serif', serif;
+}
+
+.services span{
+    color: var(--color-white);
+     font-size: inherit;
+     border-bottom: var(--color-white) 7px solid;
 }
 .services-content{    
     padding: 1rem ;
@@ -178,7 +198,7 @@ span{
 }
 
 .services p{
-    font-size: 1.5rem;  
+    font-size: 1.8rem;  
 
 }
 
@@ -186,20 +206,101 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--color-white);
-    background-color: var(--color-blue);
+    background-color: var(--color-white);
+    color: var(--color-blue);
 }
 
 .icon-container i{
     font-size: 3rem;
 }
 
+.title{
+    text-align: justify;
+    padding-right: 4rem;
+}
+
+.title h2{
+    margin-bottom: 3rem;  
+
+}
+
+.title h2 span{
+    
+    border-bottom: var(--color-blue) 7px solid;
+    font-size: inherit;
+}
 
 
 
+.title p{
+    font-size: 1.8rem;
+}
+
+.title li{
+    padding: 1.5rem 0;
+    font-weight: 600;
+}
+
+.title i{
+    padding: 0 1rem;    
+}
+
+.title li:hover{
+    color: var(--color-blue);
+    
+}
+.title li:hover i{
+    margin-right: .5rem;
+    
+} 
+
+.form{    
+    padding: 2rem;
+}
+
+.form label{
+    font-size: 2rem;
+    
+    color: var(--color-black);
+}
+
+.form input{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    
+}
+
+.form textarea{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.form button{
+    width: 100%;
+    
+    
+}
+
+footer{
+    background-color: #212529;
+}
 
 
 
+.links-container h3,li{
+    color: var(--color-white);
+}
+
+.links-container h3{
+    padding: 0 2rem;
+}
+
+footer p{
+    color: var(--color-white);
+    font-size: 1.5rem;
+}
 
 
 
