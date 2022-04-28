@@ -45,7 +45,7 @@ html{
 
 
 h2{
-    font-size: 3.8rem;
+    font-size: 3.6rem;
 }
 
 svg{
@@ -99,7 +99,7 @@ li:hover{
 .home{
     background: url(./img/legal.jpg);
     background-size: cover;   
-    min-height: 80vh;
+    min-height: 90vh;
     position: relative;
     
     
@@ -156,7 +156,7 @@ span{
 }
 
 .about-content h2{
-    
+    text-align: start; 
     
     margin-bottom: 2rem;
     font-family: 'PT Serif', serif;
@@ -189,7 +189,7 @@ span{
 }
 .services-content{    
     padding: 1rem ;
-    text-align: justify;
+    
 }
 
 .services-content .container-info{
@@ -220,12 +220,15 @@ span{
     
 }
 
+
+
 .title{
     text-align: justify;
-    padding-right: 4rem;
+    padding-right: 1rem;
 }
 
 .title h2{
+    text-align: start; 
     margin-bottom: 3rem;
 }
 
@@ -364,6 +367,10 @@ footer .copyright{
 /* ------------- MEDIA-QUERYS ------------- */
 
 @media(max-width:868px){
+
+    section{
+        padding: 0 5%;
+    }
     .about-content{
         margin-top: 3rem;
         padding: 2%;
@@ -381,6 +388,10 @@ footer .copyright{
 
 
 @media(max-width:568px){
+
+    section{
+        padding: 0 2%;
+    }
     .nav{
         position: absolute;
         top: 60px;
@@ -412,6 +423,17 @@ footer .copyright{
         display: inline-block;
         color: #000;
         
+    }
+
+    .container-lists{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .links-container{       
+        
+        margin: 0 auto;
+        margin-bottom: 3rem;
     }
 
     
