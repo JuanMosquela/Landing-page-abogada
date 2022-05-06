@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
 
 
 *{
@@ -10,6 +11,7 @@
     outline: none;
     border: none;
     transition: .3s ease;
+    
 }
 
 :root{
@@ -23,12 +25,13 @@
     --color-border: #ccc;
 }
 
+
 html{
     scroll-behavior: smooth;
-    font-size: 62.5%;
-    
-    
+    font-size: 62.5%;  
+      
 }
+
 ::-webkit-scrollbar{
     width: 1rem;  
     
@@ -44,8 +47,13 @@ html{
 }
 
 
+h1,h2,h3{
+    font-family: "Adamina", sans-serif;
+}
+
 h2{
     font-size: 3.6rem;
+    
 }
 
 svg{
@@ -57,31 +65,55 @@ svg{
 
 header{
     background-color: var(--color-white);
-    height: 60px;
+    padding: 1rem 0;    
     position: fixed;    
     z-index: 1000;
-    
-    
+    box-shadow: 0 5px 13px rgba(0, 0, 0, .1);  
     
 }
 
-
-section{
-    padding: 0 10%;
+main{
     overflow-x: hidden;
 }
 
+section{
+    padding: 0 10%;
+    overflow: hidden;
+}
 
-
+p{
+    font-family: 'PT Serif', serif;
+}
 
 .logo img{
-    width: 65px;
+    height: 60px;
     color: antiquewhite;
     
 }
 
+.nav-list li a{
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-list li:last-child{
+    background-color: var(--color-blue);
+    border-radius: 3rem;
+    padding: .5rem 1rem;
+    color: #fff;    
+}
+
+.nav-list li:last-child a{
+    color: #FFF;
+}
+
+.nav-list li:nth-child(4):hover{
+    background-color: var(--color-blue-hover);
+}
+
+
 li{
-     font-size: 1.5rem;
+     font-size: 1.6rem;
      cursor: pointer;    
 }
 li:hover{
@@ -96,24 +128,35 @@ li:hover{
 }
 
 
-.home{
-    background: url(./img/legal.jpg);
-    background-size: cover;   
-    min-height: 90vh;
+.home{   
     position: relative;
-    
+    padding: 0;    
+}
+
+.home figure{    
+    height: 90vh;        
+}
+
+.home figure img{
+    display: block;
+    object-fit: cover;
+    object-position: center;    
+    width: 100%;
+    height: 100%;
     
 }
+
 
 .home .content{
     z-index: 100;
     position: absolute;
     top: 40%;
-    left: 10%;
+    left: 15%;
+    max-width: 800px;
 }
 .home .content h1{
     font-size: 7rem;
-    font-family: 'PT Serif', serif;
+    font-family: "Adamina", sans-serif;
     font-weight: 700;
     color: var(--color-white);
     margin-bottom: 2rem;
@@ -146,7 +189,7 @@ span{
 }
 
 .about{
-    
+    min-height: 80vh;    
     background-color: var(--color-white);
 }
 
@@ -159,7 +202,7 @@ span{
     text-align: start; 
     
     margin-bottom: 2rem;
-    font-family: 'PT Serif', serif;
+    
 }
 
 .about-content p{
@@ -172,14 +215,17 @@ span{
 }
     
 .services{
-    background-color: var(--color-blue);
+    background:linear-gradient(rgba(40, 98, 143, 0.8), rgba(40, 98, 143, 0.7)),  url(./img/businessman-pointing-to-the-contract.jpg) center no-repeat;
+    background-size: cover;   
+    min-height: 100vh;
+    
     
 }
     
 .services h2{
     color: #FFF;    
     padding-bottom: 4rem;
-    font-family: 'PT Serif', serif;
+    
 }
 
 .services span{
@@ -199,7 +245,7 @@ span{
 }
 
 .services p{
-    font-size: 1.8rem;  
+    font-size: 1.6rem;  
 
 }
 
@@ -215,8 +261,32 @@ span{
     font-size: 3rem;
 }
 
+.accordion{
+    min-height: 40vh;
+    padding: 3rem 10%;
+    margin-bottom: 3rem;
+    
+}
+
+.accordion h2{
+    margin-bottom: 2rem;
+}
+.accordion p{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.accordion-item h2{
+    font-size: 2rem;
+}
+
+.accordion-body {
+    font-size: 1.5rem;
+}
+
 .contact{
     margin-bottom: 3rem;
+    min-height: 80vh;
     
 }
 
@@ -310,13 +380,32 @@ footer h3{
     color: var(--color-white);
 }
 
+.links-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.links-container a{
+    color: #FFF;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    text-decoration: none;
+}
+
 .links-container i{
     color: var(--color-white);
+    padding-top: 2rem;
+    font-size: 3rem;
 }
 
 .links-container li{
-    
+    padding: .5rem 0;
     color: var(--color-white);
+}
+
+.links-container.social{
+    display: block;
 }
 
 footer .copyright{
