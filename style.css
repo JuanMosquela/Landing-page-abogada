@@ -56,12 +56,6 @@ h2{
     
 }
 
-svg{
-    background-color: var(--color-blue);
-    
-}
-
-
 
 header{
     background-color: var(--color-white);
@@ -107,9 +101,7 @@ p{
     color: #FFF;
 }
 
-.nav-list li:nth-child(4):hover{
-    background-color: var(--color-blue-hover);
-}
+
 
 
 li{
@@ -134,18 +126,11 @@ li:hover{
 }
 
 .home figure{    
-    height: 90vh;        
-}
-
-.home figure img{
-    display: block;
+    height: 90vh; 
+    background: linear-gradient(rgba(0,0,0, .9), rgba(0,0,0, .4)), url(./img/Send-Legal-Notice-1.jpg);
     object-fit: cover;
-    object-position: center;    
-    width: 100%;
-    height: 100%;
-    
+           
 }
-
 
 .home .content{
     z-index: 100;
@@ -199,8 +184,7 @@ span{
 }
 
 .about-content h2{
-    text-align: start; 
-    
+    text-align: start;    
     margin-bottom: 2rem;
     
 }
@@ -218,7 +202,6 @@ span{
     background:linear-gradient(rgba(40, 98, 143, 0.8), rgba(40, 98, 143, 0.7)),  url(./img/businessman-pointing-to-the-contract.jpg) center no-repeat;
     background-size: cover;   
     min-height: 100vh;
-    
     
 }
     
@@ -262,22 +245,46 @@ span{
 }
 
 .accordion{
-    min-height: 40vh;
-    padding: 3rem 10%;
-    margin-bottom: 3rem;
+    background-color: var(--color-blue);      
+}
+
+.accordion-container{
+    padding: 0 10%;   
     
 }
 
-.accordion h2{
+.faq-title{
+    color: #FFF;
+    margin-bottom: 3rem;
+    padding: 0 10%;
+}
+
+.faq-title h2{
     margin-bottom: 2rem;
 }
-.accordion p{
-    margin-bottom: 2rem;
+
+
+.faq-title p{
+    font-size: 1.6rem;
+    
+} 
+
+
+
+svg{
+    background-color: #FFF;
+    
+    
+}
+
+.accordion button{
     font-size: 1.5rem;
 }
 
+
 .accordion-item h2{
     font-size: 2rem;
+    
 }
 
 .accordion-body {
@@ -285,8 +292,8 @@ span{
 }
 
 .contact{
-    margin-bottom: 3rem;
-    min-height: 80vh;
+    min-height: 100vh;
+   
     
 }
 
