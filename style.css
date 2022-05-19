@@ -16,9 +16,10 @@
 
 :root{
     --color-white: #FFF;
+    --color-black-letter: #333333;
     --color-black: #212529;
     --color-gold: #D9AE74;
-    --color-grey: #F3F4F5;
+    --color-grey: #F8F9F9;
     --color-blue: #28638F; 
     --color-blue-hover: #3877a7; 
     --color-ocre: #FFF7EF;
@@ -28,7 +29,7 @@
 
 html{
     scroll-behavior: smooth;
-    font-size: 62.5%;  
+    font-size: 65.2%;  
       
 }
 
@@ -47,8 +48,9 @@ html{
 }
 
 
-h1,h2,h3{
+h1,h2,h3,p{
     font-family: "Adamina", sans-serif;
+    color: var(--color-black-letter);
 }
 
 h2{
@@ -187,6 +189,7 @@ span{
     text-align: start;    
     margin-bottom: 2rem;
     
+    
 }
 
 .about-content p{
@@ -199,32 +202,53 @@ span{
 }
     
 .services{
-    background:linear-gradient(rgba(40, 98, 143, 0.8), rgba(40, 98, 143, 0.7)),  url(./img/businessman-pointing-to-the-contract.jpg) center no-repeat;
+    background-color: var(--color-grey);
     background-size: cover;   
-    min-height: 100vh;
+    min-height: 80vh;
     
 }
     
 .services h2{
-    color: #FFF;    
+        
     padding-bottom: 4rem;
     
 }
 
 .services span{
-    color: var(--color-white);
+    color: var(--color-blue);
      font-size: inherit;
-     border-bottom: var(--color-white) 7px solid;
+     border-bottom: var(--color-blue) 7px solid;
 }
-.services-content{    
-    padding: 1rem ;
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
     
 }
 
+
+
+.services-content{ 
+    background-color: #FFF; 
+    padding: 2rem;
+    border-radius: 5px;
+    border:rgb(231, 229, 229) 1px solid;
+    
+    
+    
+    
+}
+
+.services-content:hover{
+    box-shadow: 1px 3px 30px rgba(0, 0, 0, .1);
+}
+
 .services-content .container-info{
-    background-color: var(--color-white);       
-    padding: 1rem 2rem;
-    border: var(--color-border) thin solid;    
+    text-align: justify;
+         
+    
+        
 }
 
 .services p{
@@ -241,7 +265,8 @@ span{
 }
 
 .icon-container i{
-    font-size: 3rem;
+    font-size: 5rem;
+    padding: 0rem 3rem;
 }
 
 .accordion{
@@ -261,11 +286,13 @@ span{
 
 .faq-title h2{
     margin-bottom: 2rem;
+    color: #FFF;
 }
 
 
 .faq-title p{
     font-size: 1.6rem;
+    color: #FFF;
     
 } 
 
