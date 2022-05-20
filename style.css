@@ -79,6 +79,7 @@ section{
 
 p{
     font-family: 'PT Serif', serif;
+    
 }
 
 .logo img{
@@ -107,7 +108,7 @@ p{
 
 
 li{
-     font-size: 1.6rem;
+     font-size: 1.8rem;
      cursor: pointer;    
 }
 li:hover{
@@ -176,7 +177,7 @@ span{
 }
 
 .about{
-    min-height: 80vh;    
+    min-height: 100vh;    
     background-color: var(--color-white);
 }
 
@@ -209,6 +210,7 @@ span{
 }
     
 .services h2{
+    color: var(--color-black-letter);
         
     padding-bottom: 4rem;
     
@@ -231,7 +233,10 @@ span{
 
 .services-content{ 
     background-color: #FFF; 
-    padding: 2rem;
+    padding-left: 2rem;
+    padding: 3rem;
+    
+    
     border-radius: 5px;
     border:rgb(231, 229, 229) 1px solid;
     
@@ -245,14 +250,14 @@ span{
 }
 
 .services-content .container-info{
-    text-align: justify;
-         
+    text-align: justify;       
     
         
 }
 
 .services p{
-    font-size: 1.6rem;  
+    font-size: 1.6rem;
+     
 
 }
 
@@ -265,8 +270,9 @@ span{
 }
 
 .icon-container i{
-    font-size: 5rem;
-    padding: 0rem 3rem;
+    font-size: 5rem;    
+    padding: 5rem;
+    
 }
 
 .accordion{
@@ -422,14 +428,14 @@ footer h3{
 
 .links-container a{
     color: #FFF;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: .5rem 0;
     text-decoration: none;
 }
 
 .links-container i{
     color: var(--color-white);
-    padding-top: 2rem;
+    
     font-size: 3rem;
 }
 
@@ -438,14 +444,23 @@ footer h3{
     color: var(--color-white);
 }
 
-.links-container.social{
-    display: block;
+.links-container.social li{
+    display: flex;
+    align-items: center;  
+    
+}
+
+.links-container.social li i{
+    margin-right: 10px;
 }
 
 footer .copyright{
     font-size: 1.5rem;
     color: var(--color-white);
+    letter-spacing: 1px;
 }
+
+
 
 
 
