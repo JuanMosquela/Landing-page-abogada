@@ -93,7 +93,7 @@ p{
 }
 
 .nav-list li a{
-    color: #333;
+    color: var(--color-black-letter);
     text-decoration: none;
 }
 
@@ -161,7 +161,7 @@ span{
 }
 
 .btn{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--color-white);
     background-color: var(--color-blue);
     border-radius: .5rem;
@@ -270,10 +270,13 @@ span{
 }
 
 .icon-container i{
+    color: var(--color-blue);
     font-size: 5rem;    
     padding: 5rem;
     
 }
+
+
 
 .accordion{
     background-color: var(--color-blue);      
@@ -535,7 +538,7 @@ footer .copyright{
 @media(max-width:568px){
 
     section{
-        padding: 0 2%;
+        padding: 3rem 2%;
     }
     .nav{
         position: absolute;
@@ -589,6 +592,8 @@ footer .copyright{
         margin: 0 auto;
         margin-bottom: 3rem;
     }
+
+    
 
     .services h2{
         text-align: center;
