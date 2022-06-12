@@ -163,6 +163,11 @@ li:hover a{
     left: 10%;
     max-width: 800px;
 }
+
+.home .content span{
+    color: #FFF;
+    font-size: 2.2rem;
+}
 .home .content h1{
     font-size: 7rem;
     font-family: "Adamina", sans-serif;
