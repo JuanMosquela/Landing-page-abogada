@@ -10,18 +10,18 @@
     list-style: none;
     outline: none;
     border: none;
-    transition: .3s ease;
-    
+    transition: .3s ease;    
 }
 
 :root{
     --color-white: #FFF;
     --color-black-letter: #333333;
+    --color-black-p: #666365;
     --color-black: #212529;
     --color-gold: #D9AE74;
     --color-grey: #F8F9F9;
     --color-blue: #28638F; 
-    --color-blue-hover: #3877a7; 
+    --color-blue-hover: #926DAD; 
     --color-ocre: #FFF7EF;
     --color-border: #ccc;
 }
@@ -29,13 +29,11 @@
 
 html{
     scroll-behavior: smooth;
-    font-size: 65.2%;  
-      
+    font-size: 65.2%;       
 }
 
 ::-webkit-scrollbar{
-    width: 1rem;  
-    
+    width: 1rem;     
 }
 
 ::-webkit-scrollbar-thumb{
@@ -43,23 +41,27 @@ html{
     background-color: var(--color-gold);
 }
 ::-webkit-scrollbar-track{
-    background-color: var(--color-white);
-    
+    background-color: var(--color-white);    
 }
 
-
-h1,h2,h3,p{
+h1,h2,h3{
     font-family: "Adamina", sans-serif;
     color: var(--color-black-letter);
+    
 }
 
 h2{
-    font-size: 3.6rem;
-    
+    font-size: 3.6rem;   
 }
 
 h3{
     font-size: 2.6rem;
+}
+
+p{
+    font-family: 'PT Serif', serif;
+    color: var(--color-black-p);
+    font-size: 1.8rem;
 }
 
 
@@ -81,10 +83,7 @@ section{
     overflow: hidden;
 }
 
-p{
-    font-family: 'PT Serif', serif;
-    
-}
+
 
 .logo img{
     height: 60px;
@@ -104,19 +103,22 @@ p{
     color: #fff;    
 }
 
+.nav-list li:last-child:hover{
+    background-color: var(--color-blue-hover);
+       
+}
+
 .nav-list li:last-child a{
     color: #FFF;
 }
-
-
-
 
 li{
      font-size: 1.8rem;
      cursor: pointer;    
 }
-li:hover{
+li:hover a{
     color: var(--color-gold);
+    
 }
 
 #menu-btn{
@@ -133,17 +135,32 @@ li:hover{
 }
 
 .home{    
-    height: 90vh; 
-    background: linear-gradient(rgba(0,0,0, .9), rgba(0,0,0, .4)), url(./img/Send-Legal-Notice-1.jpg);
+    min-height: 80vh; 
+    background-color: #28638F;
+    background: linear-gradient(to right, #926DAD,#28638F);
     object-fit: cover;
            
+}
+
+.home img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+   
+}
+
+.img-left{
+    top: 0;
+    left: 0;
+    height: 50%;
 }
 
 .home .content{
     z-index: 100;
     position: absolute;
     top: 40%;
-    left: 15%;
+    left: 10%;
     max-width: 800px;
 }
 .home .content h1{
@@ -163,38 +180,34 @@ span{
 .btn{
     font-size: 2rem;
     color: var(--color-white);
-    background-color: var(--color-blue);
+    border: #FFF 5px solid ;    
     border-radius: .5rem;
     padding: 1rem 2rem;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 600;
+    transition: .5s;
 }
 
 .btn:hover{
-    background-color: var(--color-blue-hover);
+    
+    transform: scale(1.1);
     color: var(--color-white);
 }
-
 
 .about{
     min-height: 100vh;    
     background-color: var(--color-white);
 }
 
-.about-content{
-    padding: 0 3rem;
-    text-align: justify;
-}
 
 .about-content h2{
     text-align: start;    
-    margin-bottom: 2rem;
-    
+    margin-bottom: 2rem; 
     
 }
 
-.about-content p{
-     font-size: 1.8rem;
+.about-content p{    
      margin-bottom: 2rem;
 }
 
@@ -205,13 +218,12 @@ span{
 .services{
     background-color: var(--color-grey);
     background-size: cover;   
-    min-height: 80vh;
-    
+    min-height: 80vh;  
+    margin-bottom: 3rem;  
 }
     
 .services h2{
-    color: var(--color-black-letter);
-        
+    color: var(--color-black-letter);        
     padding-bottom: 4rem;
     
 }
@@ -225,23 +237,15 @@ span{
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    
+    gap: 3rem;    
 }
-
-
 
 .services-content{ 
     background-color: #FFF; 
     padding-left: 2rem;
-    padding: 3rem;
-    
-    
+    padding: 3rem;    
     border-radius: 5px;
-    border:rgb(231, 229, 229) 1px solid;
-    
-    
-    
+    border:rgb(231, 229, 229) 1px solid;   
     
 }
 
@@ -250,16 +254,11 @@ span{
 }
 
 .services-content .container-info{
-    text-align: justify;       
-    
+    text-align: justify;   
         
 }
 
-.services p{
-    font-size: 1.6rem;
-     
 
-}
 
 .icon-container{
     display: flex;
@@ -272,59 +271,7 @@ span{
 .icon-container i{
     color: var(--color-blue);
     font-size: 5rem;    
-    padding: 5rem;
-    
-}
-
-
-
-.accordion{
-    background-color: var(--color-blue);      
-}
-
-.accordion-container{
-    padding: 0 10%;   
-    
-}
-
-.faq-title{
-    color: #FFF;
-    margin-bottom: 3rem;
-    padding: 0 10%;
-}
-
-.faq-title h2{
-    margin-bottom: 2rem;
-    color: #FFF;
-}
-
-
-.faq-title p{
-    font-size: 1.6rem;
-    color: #FFF;
-    
-} 
-
-
-
-svg{
-    background-color: #FFF;
-    
-    
-}
-
-.accordion button{
-    font-size: 1.5rem;
-}
-
-
-.accordion-item h2{
-    font-size: 2rem;
-    
-}
-
-.accordion-body {
-    font-size: 1.5rem;
+    padding: 5rem;    
 }
 
 .contact{
@@ -333,11 +280,9 @@ svg{
     
 }
 
-
-
 .title{
     text-align: justify;
-    padding-right: 1rem;
+    padding-right: 8rem;
 }
 
 .title h2{
@@ -345,18 +290,10 @@ svg{
     margin-bottom: 3rem;
 }
 
-
-
 .title h2 span{
     
     border-bottom: var(--color-blue) 7px solid;
     font-size: inherit;
-}
-
-
-
-.title p{
-    font-size: 1.8rem;
 }
 
 .title li{
@@ -372,9 +309,9 @@ svg{
     color: var(--color-blue);
     
 }
+
 .title li:hover i{
-    margin-right: .5rem;
-    
+    margin-right: .5rem;    
 } 
 
 .form{    
@@ -382,8 +319,7 @@ svg{
 }
 
 .form label{
-    font-size: 2rem;
-    
+    font-size: 2rem;    
     color: var(--color-black);
 }
 
@@ -391,6 +327,7 @@ svg{
     margin-bottom: 1rem;
     padding: 1rem;
     font-size: 1.5rem;
+    background-color: var(--color-grey);
     
 }
 
@@ -398,13 +335,103 @@ svg{
     font-size: 1.5rem;
     margin-bottom: 2rem;
     padding: 1rem;
+    background-color: var(--color-grey);
 }
 
 .form button{
-    width: 100%;
-    
+    width: 100%; 
+    border: none;
+    background-color: #28638F;  
     
 }
+
+.form button:hover{
+    background-color: #926DAD;
+    transform: scale(1);
+}
+
+.faq{
+    min-height: 60rem;
+    padding: 0rem 10%; 
+    background-color: var(--color-blue);   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+    gap: 4rem;     
+    position: relative;
+}
+
+.faq img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.faq span{
+    border-bottom: 5px solid #FFF;
+}
+
+.faq h2{
+    color: #FFF;             
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;  
+}
+
+.container-question{
+    z-index: 100;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    color: #333;   
+    padding: 1.5rem;
+    height: 80px;
+    
+}
+
+.question h4{
+    font-size: 2rem;
+}
+
+.answer{ 
+    background-color: rgb(243, 240, 240);
+    color: #333;                  
+    
+    
+    max-height: 0;
+    overflow: hidden;
+    padding:0 1.5rem;                   
+} 
+
+.container-question.active .answer{
+    max-height: 300px;
+    padding: 1rem;
+   
+}
+
+
+.container-question i{
+     font-size: 2rem;
+     padding: 1rem;
+     cursor: pointer;
+     background-color: var(--color-blue);
+     color: #FFF;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+    
+
 
 
 
@@ -466,51 +493,12 @@ footer .copyright{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------- MEDIA-QUERYS ------------- */
 
 @media(max-width:868px){
 
     section{
-        padding: 0 5%;
+        padding: 0rem 5%;
     }
     .about-content{
         margin-top: 3rem;
@@ -538,7 +526,8 @@ footer .copyright{
 @media(max-width:568px){
 
     section{
-        padding: 3rem 2%;
+        padding: 5rem 2%;
+       
     }
     .nav{
         position: absolute;
@@ -575,10 +564,12 @@ footer .copyright{
 
     .home .content{
         z-index: 100;
-        position: absolute;
-        top: 25%;
-        left: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         text-align: center;
+        inset: 0;
         
     }
 
@@ -611,6 +602,18 @@ footer .copyright{
         text-align: center;       
         
             
+    }
+
+    .faq h2{
+        padding-top: 2rem;
+    }
+
+    .form{
+        padding: 2rem 0rem;
+    }
+
+    .title{
+        padding: 0.5rem;
     }
 
     
