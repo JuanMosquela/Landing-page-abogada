@@ -123,9 +123,11 @@ li:hover a{
 
 #menu-btn{
     display: none;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     z-index: 999;
     cursor: pointer;
+    color: #28638F;
+    margin-right: 2rem;
 }
 
 
