@@ -251,7 +251,7 @@ span{
     background-color: #FFF; 
     padding-left: 2rem;
     padding: 3rem;    
-    border-radius: 5px;
+    border-radius: 7px;
     border:rgb(231, 229, 229) 1px solid;   
     
 }
@@ -392,6 +392,7 @@ span{
 
 .container-question{
     z-index: 100;
+    
 }
 
 .question{
@@ -402,6 +403,7 @@ span{
     color: #333;   
     padding: 1.5rem;
     height: 80px;
+    border-radius: 7px 7px 0 0;
     
 }
 
@@ -411,7 +413,8 @@ span{
 
 .answer{ 
     background-color: rgb(243, 240, 240);
-    color: #333;                  
+    color: #000; 
+    border-radius: 0 0 7px 7px;                 
     
     
     max-height: 0;
