@@ -137,7 +137,7 @@ li:hover a{
 }
 
 .home{    
-    min-height: 80vh; 
+    min-height: 85vh; 
     background-color: #28638F;
     background: linear-gradient(to right, #926DAD,#28638F);
     object-fit: cover;
@@ -180,14 +180,14 @@ li:hover a{
 
 span{
     color: var(--color-blue);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
      font-weight: bold;
 }
 
 .btn{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--color-white);
-    border: #FFF 5px solid ;    
+    border: #FFF 4px solid ;    
     border-radius: .5rem;
     padding: 1rem 2rem;
     text-decoration: none;
@@ -243,16 +243,24 @@ span{
 
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;    
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+   
+    
+
+      
 }
 
 .services-content{ 
+    width: 100%;
+    display: block;
+    
     background-color: #FFF; 
     padding-left: 2rem;
     padding: 3rem;    
     border-radius: 7px;
-    border:rgb(231, 229, 229) 1px solid;   
+    border:rgb(231, 229, 229) 1px solid;  
+    
     
 }
 
@@ -384,11 +392,7 @@ span{
     text-align: center;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;  
-}
+
 
 .container-question{
     z-index: 100;
